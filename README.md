@@ -40,9 +40,10 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ![original_classification_report](https://user-images.githubusercontent.com/95830866/159170523-a47fb219-96b1-40a0-aba7-86a4d28158c8.PNG)
 
 Description of Model 1 Accuracy, Precision, and Recall scores.
-Precision was 100% for class 0 and 85% for class 1. 
-Recall was 99% for class 0 and 91 % for class 1. 
-Model Accuracy was 95.2% 
+
+- Precision was 100% for class 0 and 85% for class 1. 
+- Recall was 99% for class 0 and 91 % for class 1. 
+- Model Accuracy was 95.2% 
 
 Although we have a high precision and recall scores, we have a highly imbalanced data set. The results of this model are meaningless. The goal was to have our model capture high risk loans. The model has a precision of 85% and recall of 91% of or class 1 with 619 high risk loans. We can however conclude our model is good at determining the 0 class, or healthy loans.
 
@@ -53,9 +54,10 @@ Although we have a high precision and recall scores, we have a highly imbalanced
 ![resampled_classification_report](https://user-images.githubusercontent.com/95830866/159170553-6b1a8756-111a-4e19-a453-043a885e35e7.PNG)
 
 Description of Model 2 Accuracy, Precision, and Recall scores.
-Precision was 100% for class 0 and 84% for class 1. 
-Recall was 99% for class 0 and 99 % for class 1. 
-Model Accuracy was 99.3% 
+
+- Precision was 100% for class 0 and 84% for class 1. 
+- Recall was 99% for class 0 and 99 % for class 1. 
+- Model Accuracy was 99.3% 
 
 Oversampling the data helped to improve the model's recall, F1-score at the expense of 0.01 or 1 % of precision. This is a better model than ordinal we we capture 99% of the high-risk loans, with recall. With a precision of 84% we can refer all the high-risk loans for further analysis. Our model still performs well at capturing all the healthy loans with 99% recall at a rate of 100% precision.
 
